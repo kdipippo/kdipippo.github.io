@@ -5,21 +5,10 @@ body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-
-.leftcolumn {
-	position: absolute;
-	top: 8px;
-	left: 16px;
-	font-size: 18px;
-	width: 300px;
-	text-align: right;
-}
-
-.tylerbutton {
+li .tylerbutton {
 	background: #000 url("bg1.jpg") top left;
 	border: 6px ridge #bbb;
 	padding: 4px 12px;
-	display: inline-block;
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
@@ -27,7 +16,7 @@ body {
 	text-shadow: 4px 4px 2px rgba(71, 200, 150, 1);
 }
 
-.tylerbutton img {
+li .tylerbutton img {
 	width: 50px;
 	vertical-align: middle;
 }
@@ -39,5 +28,4 @@ body {
 .center {
 	text-align: center;
 	background:rgba(255,255,255,0.5);
-	height: 100%;
 }
