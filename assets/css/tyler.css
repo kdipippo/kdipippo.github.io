@@ -1,12 +1,12 @@
 body {
 	color: #FF0000;
-	background-image: url("tylergif2.gif");
+	background-image: url("../images/tylergif2.gif");
 	background-repeat: repeat;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 li .tylerbutton {
-	background: #000 url("bg1.jpg") top left;
+	background: #000 url("../images/bg1.jpg") top left;
 	border: 6px ridge #bbb;
 	padding: 4px 12px;
 	font-size: 16px;
@@ -22,7 +22,7 @@ li .tylerbutton img {
 }
 
 .tylerbutton:hover {
-	background: #000 url("giphy.gif") top left;
+	background: #000 url("../images/giphy.gif") top left;
 }
 
 .center {
