@@ -1,0 +1,43 @@
+body
+{
+    font-family:"Open sans", Helvetica, Arial;
+    line-height:1.5;
+    background-image: url("../images/background.gif");
+}
+
+.margin {
+    margin-bottom: 10px;
+}
+
+.win95 {
+	padding: 2px;
+	border: 2px solid #000;
+}
+
+.collapse img {
+	width: 100%;
+}
+
+.panel-title>a {
+	display: block;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.panel-heading:hover {
+	background-color: #ccc;
+}
+
+.pad {
+    padding-top: 10px;
+}
+
+.container {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
+    border: 2px solid black;
+    border-radius: 10px;
+}
