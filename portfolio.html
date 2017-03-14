@@ -8,8 +8,7 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/layout.css">
+	
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
@@ -18,7 +17,8 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
 	<script type="text/javascript">
 	$(function () {
 		
@@ -49,7 +49,7 @@
 	});	
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
 
@@ -88,7 +88,7 @@
     
 		<div id="portfoliolist">
       <!-- ADOPTAPEDIA -->
-			<div class="portfolio web" data-cat="web"  data-toggle="modal" data-target="#adoptapediaModal">
+			<div class="portfolio prog web" data-cat="prog web"  data-toggle="modal" data-target="#adoptapediaModal">
 				<div class="portfolio-wrapper">				
 					<img src="img/previews/adoptapedia.png" alt="" />
 					<div class="label">
@@ -498,6 +498,38 @@
               <a target="_blank" href="http://www.kathryndipippo.com/SchuylerFarms/"><button type="button" class="btn btn-warning">View Live Website</button></a>
               <a target="_blank" href="https://github.com/Pepper-Wood/SchuylerFarms"><button type="button" class="btn btn-warning">Code Repository</button></a>
               <p>Summer 2016, I discovered the website of <a target="_blank" href="http://www.schuylerfarms.com/">Schuyler Farms</a> and wanted to test my own abilities to redesign it while still maintaining the feel of the original site. This is still an ongoing project. I hope to finish polishing up the website with a proper framework than a template as I had started and eventually offer the finished project to the fine folks who run the farm.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SOOSH ARPG -->
+			<div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#sooshModal">
+				<div class="portfolio-wrapper">				
+					<img src="img/previews/soosh.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">SooshARPG</a>
+							<span class="text-category">HTML, CSS, JavaScript</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+      <div id="sooshModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">SooshARPG</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/sooshModal.png">
+              <a target="_blank" href="http://www.kathryndipippo.com/SooshARPG/"><button type="button" class="btn btn-warning">Live Website</button></a>
+              <a target="_blank" href="https://github.com/Pepper-Wood/SooshARPG"><button type="button" class="btn btn-warning">Code Repository</button></a>
+              <p>February 2017, made a simple RPG-style page for a character of mine in an online Art Roleplaying Game. Most github updates are adding stat bonuses to my characters, but I soon plan on adding more fancy stylization once item art is released, and to create a page that allows the inventory to autogenerate possible crafting combinations.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
