@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/layout.css">
+  
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
@@ -21,11 +21,8 @@
 	
 	<script type="text/javascript">
 	$(function () {
-		
 		var filterList = {
-		
 			init: function () {
-			
 				// MixItUp plugin
 				// http://mixitup.io
 				$('#portfoliolist').mixItUp({
@@ -37,68 +34,64 @@
       		  filter: '.web'  
       		}     
 				});								
-			
 			}
 		};
-		
 		// Run the show!
 		filterList.init();
-		
-		
-	});	
+	});
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><div class="logo"><div class="name">Kathryn DiPippo</div>Portfolio</div></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="rightmost"><a target="_blank" href="resume.pdf">Resume</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><div class="logo"><div class="name">Kathryn DiPippo</div>Portfolio</div></a>
       </div>
-    </nav>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="rightmost"><a target="_blank" href="resume.pdf">Resume</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-	<div class="container">
-	
-		<br><br><br>
-		<ul id="filters" class="clearfix">
-			<li><span class="filter active" data-filter=".prog, .art, .web, .ui">All</span></li>
-			<li><span class="filter" data-filter=".prog">Programming</span></li>
-			<li><span class="filter" data-filter=".art">Art and Graphic Design</span></li>
-			<li><span class="filter" data-filter=".web">Web Development</span></li>
-			<li><span class="filter" data-filter=".ui">User Interface Design</span></li>
-		</ul>
+  <div class="gallerycontainer">
+    <br><br><br>
+    <div tabindex="0" class="onclick-menu">
+      <ul id="navFilter" class="clearfix onclick-menu-content">
+        <li><span class="filter active" data-filter=".prog, .art, .web, .ui">All</span></li>
+        <li><span class="filter" data-filter=".prog">Programming</span></li>
+        <li><span class="filter" data-filter=".art">Art and Graphic Design</span></li>
+        <li><span class="filter" data-filter=".web">Web Development</span></li>
+        <li><span class="filter" data-filter=".ui">User Interface Design</span></li>
+      </ul>
+    </div>
     
-		<div id="portfoliolist">
+    <div id="portfoliolist">
       <!-- ADOPTAPEDIA -->
-			<div class="portfolio web" data-cat="web"  data-toggle="modal" data-target="#adoptapediaModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/adoptapedia.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Adoptapedia</a>
-							<span class="text-category">PHP, HTML, CSS, JS, SQL</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio web" data-cat="web"  data-toggle="modal" data-target="#adoptapediaModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/adoptapedia.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Adoptapedia</a>
+              <span class="text-category">PHP, HTML, CSS, JS, SQL</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="adoptapediaModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -121,18 +114,18 @@
         </div>
       </div>
       <!-- JOHN C'S GAME OF LIFE -->
-			<div class="portfolio prog web" data-cat="prog web"  data-toggle="modal" data-target="#conwayModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/conway.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">John C's 3D Game of Life</a>
-							<span class="text-category">JavaScript, HTML, CSS</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio prog web" data-cat="prog web"  data-toggle="modal" data-target="#conwayModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/conway.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">John C's 3D Game of Life</a>
+              <span class="text-category">JavaScript, HTML, CSS</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="conwayModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -189,31 +182,31 @@
         </div>
       </div>
       <!-- DIGITAL ART PORTFOLIO -->
-			<a href="digital.html"><div class="portfolio art" data-cat="art">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/digital.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Digital Art Portfolio</a>
-							<span class="text-category">PaintToolSAI, Adobe Photoshop</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div></a>
+      <a href="digital.html"><div class="portfolio art" data-cat="art">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/digital.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Digital Art Portfolio</a>
+              <span class="text-category">PaintToolSAI, Adobe Photoshop</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div></a>
       <!-- FREEZE ALERT -->
-			<div class="portfolio prog" data-cat="prog" data-toggle="modal" data-target="#freezeModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/freeze.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">FreezeAlert</a>
-							<span class="text-category">Python</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio prog" data-cat="prog" data-toggle="modal" data-target="#freezeModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/freeze.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">FreezeAlert</a>
+              <span class="text-category">Python</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="freezeModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -234,18 +227,18 @@
         </div>
       </div>
       <!-- GARDEN GATE -->
-			<div class="portfolio art web" data-cat="art web" data-toggle="modal" data-target="#gardenModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/garden.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Through the Garden Gate</a>
-							<span class="text-category">PaintToolSAI, HTML</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio art web" data-cat="art web" data-toggle="modal" data-target="#gardenModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/garden.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Through the Garden Gate</a>
+              <span class="text-category">PaintToolSAI, HTML</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="gardenModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -265,18 +258,18 @@
         </div>
       </div>
       <!-- GENERICON WEBSITE -->
-			<div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#genericonModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/genericon.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Genericon Website</a>
-							<span class="text-category">Wordpress, CSS</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#genericonModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/genericon.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Genericon Website</a>
+              <span class="text-category">Wordpress, CSS</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="genericonModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -296,44 +289,44 @@
         </div>
       </div>
       <!-- GENERICON ART ASSETS -->
-			<a href="genericon.html"><div class="portfolio art" data-cat="art">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/genericonart.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Genericon Art Assets</a>
-							<span class="text-category">PaintToolSAI, Adobe Photoshop</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div></a>
+      <a href="genericon.html"><div class="portfolio art" data-cat="art">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/genericonart.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Genericon Art Assets</a>
+              <span class="text-category">PaintToolSAI, Adobe Photoshop</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div></a>
       <!-- GRAPHITE PORTFOLIO -->
-			<a href="graphite.html"><div class="portfolio art" data-cat="art">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/graphite.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Graphite Portfolio</a>
-							<span class="text-category">2013-2015</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div></a>
+      <a href="graphite.html"><div class="portfolio art" data-cat="art">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/graphite.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Graphite Portfolio</a>
+              <span class="text-category">2013-2015</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div></a>
       <!-- LARPING RESUME -->
-			<div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#larpModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/larp.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">LARPing Resume</a>
-							<span class="text-category">HTML, CSS, Bootstrap</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#larpModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/larp.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">LARPing Resume</a>
+              <span class="text-category">HTML, CSS, Bootstrap</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="larpModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -353,18 +346,18 @@
         </div>
       </div>
       <!-- MIRTHE 2014 -->
-			<div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2014Modal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/mirthe2014.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Glucose Sensing MatLab Interface</a>
-							<span class="text-category">MatLab, 2014</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2014Modal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/mirthe2014.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Glucose Sensing MatLab Interface</a>
+              <span class="text-category">MatLab, 2014</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="mirthe2014Modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -386,18 +379,18 @@
         </div>
       </div>
       <!-- MIRTHE 2015 -->
-			<div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2015Modal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/mirthe2015.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Glucose Sensing Python Interface</a>
-							<span class="text-category">Python, 2015</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2015Modal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/mirthe2015.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Glucose Sensing Python Interface</a>
+              <span class="text-category">Python, 2015</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="mirthe2015Modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -445,44 +438,44 @@
         </div>
       </div>
       <!-- MIXED MEDIA PORTFOLIO -->
-			<a href="mixedmedia.html"><div class="portfolio art" data-cat="art">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/mixed.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Mixed Media Portfolio</a>
-							<span class="text-category">Various Media, 2013</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div></a>
+      <a href="mixedmedia.html"><div class="portfolio art" data-cat="art">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/mixed.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Mixed Media Portfolio</a>
+              <span class="text-category">Various Media, 2013</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div></a>
       <!-- PAINTING PORTFOLIO -->
-			<a href="painting.html"><div class="portfolio art" data-cat="art">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/painting.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Painting Portfolio</a>
-							<span class="text-category">Acrylic, Oil, 2016</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div></a>
+      <a href="painting.html"><div class="portfolio art" data-cat="art">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/painting.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Painting Portfolio</a>
+              <span class="text-category">Acrylic, Oil, 2016</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div></a>
       <!-- SCHUYLER FARMS -->
-			<div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#schuylerModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/schuyler.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Schuyler Farms Website</a>
-							<span class="text-category">HTML, CSS, JavaScript</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#schuylerModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/schuyler.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Schuyler Farms Website</a>
+              <span class="text-category">HTML, CSS, JavaScript</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="schuylerModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -502,19 +495,51 @@
           </div>
         </div>
       </div>
-      <!-- TIBERIUS -->
-			<div class="portfolio prog" data-cat="prog" data-toggle="modal" data-target="#tiberiusModal">
+      <!-- SOOSH ARPG -->
+			<div class="portfolio web" data-cat="web" data-toggle="modal" data-target="#sooshModal">
 				<div class="portfolio-wrapper">				
-					<img src="img/previews/tiberius.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Tiberius the Line Following Robot</a>
-							<span class="text-category">C, Arduino</span>
+					<img src="img/previews/soosh.png" alt="" />
+					<div class="gallerylabel">
+						<div class="gallerylabel-text">
+							<a class="text-title">SooshARPG</a>
+							<span class="text-category">HTML, CSS, JavaScript</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="gallerylabel-bg"></div>
 					</div>
 				</div>
 			</div>
+      <div id="sooshModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">SooshARPG</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/sooshModal.png">
+              <a target="_blank" href="http://www.kathryndipippo.com/SooshARPG/"><button type="button" class="btn btn-warning">Live Website</button></a>
+              <a target="_blank" href="https://github.com/Pepper-Wood/SooshARPG"><button type="button" class="btn btn-warning">Code Repository</button></a>
+              <p>February 2017, made a simple RPG-style page for a character of mine in an online Art Roleplaying Game. Most github updates are adding stat bonuses to my characters, but I soon plan on adding more fancy stylization once item art is released, and to create a page that allows the inventory to autogenerate possible crafting combinations.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TIBERIUS -->
+      <div class="portfolio prog" data-cat="prog" data-toggle="modal" data-target="#tiberiusModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/tiberius.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Tiberius the Line Following Robot</a>
+              <span class="text-category">C, Arduino</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="tiberiusModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -547,18 +572,18 @@
         </div>
       </div>
       <!-- VIRTUAL TOUR -->
-			<div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#virtualtourModal">
-				<div class="portfolio-wrapper">				
-					<img src="img/previews/virtualtour.png" alt="" />
-					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Virtual Tour Interface</a>
-							<span class="text-category">C#, CSHTML, ASP.NET</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-			</div>
+      <div class="portfolio ui" data-cat="ui" data-toggle="modal" data-target="#virtualtourModal">
+        <div class="portfolio-wrapper">				
+          <img src="img/previews/virtualtour.png" alt="" />
+          <div class="gallerylabel">
+            <div class="gallerylabel-text">
+              <a class="text-title">Virtual Tour Interface</a>
+              <span class="text-category">C#, CSHTML, ASP.NET</span>
+            </div>
+            <div class="gallerylabel-bg"></div>
+          </div>
+        </div>
+      </div>
       <div id="virtualtourModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -577,6 +602,6 @@
         </div>
       </div>
 		</div><!-- portfoliolist -->		
-	</div><!-- container -->
+	</div><!-- gallerycontainer -->
 </body>
 </html>
