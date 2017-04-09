@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="author" content="" />
-	<meta name="description" content="" />
-
-	<title>Kathryn DiPippo | Homepage</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
-	<script>document.documentElement.className = 'js';</script>
+  <title>Kathryn DiPippo | Portfolio</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	<!-- Force latest IE rendering engine & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- Make IE recognise HTML5 elements for styling -->
-	<!--[if lte IE 8]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<noscript>
-		<strong>Warning!</strong>
-		Your browser does not support HTML5 so some elements on this page are simulated using JScript. Unfortunately your browser has JScript disabled. Please enable it in order to display this page.
-	</noscript>
-	<![endif]-->
-	<!-- Disable image toolbar in IE6 -->
-	<!--[if lte IE 6]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/jquery.parallax.css" />
-
-  <!-- For text rotation -->
-  <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css" />
-  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link rel="stylesheet" href="css/weather.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+  <link href="css/simple-sidebar.css" rel="stylesheet">
 
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 <body>
-<!-- Fixed navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -54,49 +40,112 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="rightmost"><a target="_blank" href="resume.pdf">Resume</a></li>
+          <li><a target="_blank" href="resume.pdf">Resume</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-  <br><br><br><br>
-  <div class="main">
-    <h1>Hello! I'm Kathryn DiPippo: <span class="rotate">Programmer, Artist, Web Developer, Graphic Designer, UX/UI Designer</span></h1>
-  </div>
-  <div id="target" class="weather rain parallax-port">
-      <img class="parallax-layer" src="img/parallax/1.png">
-      <img class="parallax-layer" src="img/parallax/2.png">
-      <img class="parallax-layer" src="img/parallax/3.png">
-  </div>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
-  <script src="js/jquery.parallax.js"></script>
-  <script type="text/javascript">
-	    $(".rotate").textrotator({
-	      animation: "flipUp",
-	      speed: 2000
-	    });
-	</script>
-  <script type="text/javascript">
-  jQuery(document).ready(function(){
-      var target = jQuery("#target");
+  
+  <!-- Page Content -->
+  <div style="font-size:30px;text-align:center;">Hello! I'm <span style="font-weight:bold;">Kathryn DiPippo</span>, a <span style="font-weight:bold;color:#ff1447">front-end</span> / <span style="font-weight:bold;color:#16f9d0">back-end</span> developer and graphic artist.</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ba-slider">
+          <img src="img/backend.png" alt="">       
+          <div class="resize">
+            <img src="img/frontend.png" alt="">
+          </div>
+          <span class="handle"></span>
+        </div>
+      </div>
       
-      target
-      .children('img')
-      .parallax(
-          { mouseport: target },
-          { xparallax: 0.2, yparallax: 0.2 },     // Blue layer options
-          { xparallax: 0.6, yparallax: 0.6 },     // Green layer options
-          {}                                      // Red layer options
-      );
+    </div>
+  </div>
+
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  // Call & init
+  $(document).ready(function(){
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
   });
+
+  // Update sliders on resize. 
+  // Because we all do this: i.imgur.com/YkbaV.gif
+  $(window).resize(function(){
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+    });
+  });
+
+  function drags(dragElement, resizeElement, container) {
+    
+    // Initialize the dragging event on mousedown.
+    dragElement.on('mousedown touchstart', function(e) {
+      
+      dragElement.addClass('draggable');
+      resizeElement.addClass('resizable');
+      
+      // Check if it's a mouse or touch event and pass along the correct value
+      var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+      
+      // Get the initial position
+      var dragWidth = dragElement.outerWidth(),
+          posX = dragElement.offset().left + dragWidth - startX,
+          containerOffset = container.offset().left,
+          containerWidth = container.outerWidth();
+   
+      // Set limits
+      minLeft = containerOffset + 10;
+      maxLeft = containerOffset + containerWidth - dragWidth - 10;
+      
+      // Calculate the dragging distance on mousemove.
+      dragElement.parents().on("mousemove touchmove", function(e) {
+        
+        // Check if it's a mouse or touch event and pass along the correct value
+        var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+        
+        leftValue = moveX + posX - dragWidth;
+        
+        // Prevent going off limits
+        if ( leftValue < minLeft) {
+          leftValue = minLeft;
+        } else if (leftValue > maxLeft) {
+          leftValue = maxLeft;
+        }
+        
+        // Translate the handle's left value to masked divs width.
+        widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+        
+        // Set the new values for the slider and the handle. 
+        // Bind mouseup events to stop dragging.
+        $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+          $(this).removeClass('draggable');
+          resizeElement.removeClass('resizable');
+        });
+        $('.resizable').css('width', widthValue);
+      }).on('mouseup touchend touchcancel', function(){
+        dragElement.removeClass('draggable');
+        resizeElement.removeClass('resizable');
+      });
+      e.preventDefault();
+    }).on('mouseup touchend touchcancel', function(e){
+      dragElement.removeClass('draggable');
+      resizeElement.removeClass('resizable');
+    });
+  }
   </script>
-
-<!--[if lt IE 7]>
-<script type="text/javascript" src="js/jquery.ifixpng.js"></script>
-<script type="text/javascript">jQuery(document).ready(function(){ jQuery("img[src$='png']").ifixpng(); });</script>
-<![endif]-->
-
 </body>
 </html>
