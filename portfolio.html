@@ -11,7 +11,7 @@
   <title>Kathryn DiPippo | Portfolio</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
@@ -25,27 +25,21 @@
 <body>
 
   <!-- Static navbar -->
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><div class="logo"><div class="name">Kathryn DiPippo</div>Portfolio</div></a>
+  <div class="topNav_container"><div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-xs-8">
+        <a href="index.html"><img src="img/logo.png" style="height:60px"></a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a target="_blank" href="resume.pdf">Resume</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+      <div class="col-md-7 col-sm-7 col-xs-4" style="padding-top:13px">
+        <div class="btn-group btn-group-justified topNav_buttons">
+          <a href="portfolio.html" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> <span class="topNav_text">Portfolio</span></a>
+          <a href="about.html" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="topNav_text">About</span></a>
+          <a target="_blank" href="resume.pdf" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <span class="topNav_text">Resume</span></a>
+        </div>
+      </div>
     </div>
-  </nav>
-  
+  </div></div>
+
   <!-- Page Content -->
   <div class="gallerycontainer">
     <div tabindex="0" class="onclick-menu">
@@ -58,11 +52,11 @@
         <li><span class="filter" data-filter=".ui">User Interface Design</span></li>
       </ul>
     </div>
-    
+
     <div id="portfoliolist">
       <!-- ADOPTAPEDIA -->
       <div class="all portfolio web" data-cat="web"  data-toggle="modal" data-target="#adoptapediaModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/adoptapedia.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -96,7 +90,7 @@
       </div>
       <!-- JOHN C'S GAME OF LIFE -->
       <div class="all portfolio prog web" data-cat="prog web"  data-toggle="modal" data-target="#conwayModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/conway.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -139,7 +133,7 @@
                     <div class="carousel-caption">
                       <p>Initial Appearance</p>
                     </div>
-                  </div>              
+                  </div>
                 </div>
 
                 <!-- Left and right controls -->
@@ -164,7 +158,7 @@
       </div>
       <!-- DIGITAL ART PORTFOLIO -->
       <a href="digital.html"><div class="all portfolio art" data-cat="art">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/digital.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -177,7 +171,7 @@
       </div></a>
       <!-- FREEZE ALERT -->
       <div class="all portfolio prog" data-cat="prog" data-toggle="modal" data-target="#freezeModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/freeze.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -209,7 +203,7 @@
       </div>
       <!-- GARDEN GATE -->
       <div class="all portfolio art web" data-cat="art web" data-toggle="modal" data-target="#gardenModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/garden.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -230,7 +224,7 @@
             <div class="modal-body">
               <img src="img/gardenGatePreview.png">
               <a target="_blank" href="http://www.kathryndipippo.com/GardenGate"><button type="button" class="btn btn-pink">View Live Project</button></a>
-              <p>Spring 2016, I designed and implemented a choose-your-own adventure style project using html based on a short story by Neil Gaiman called "Instructions". The art itself is based on the works of <a target="_blank href="http://www.tcj.com/uno-moralez/">Uno Moralez</a>, and the text and UI design is based on the UI of the game <a target="_blank" href="http://undertale.com/">Undertale</a> by Toby Fox. This was my first major undertaking with designing an interactive website and my second attempt at web development after John C's 3D Game of Life.</p>
+              <p>Spring 2016, I designed and implemented a choose-your-own adventure style project using html based on a short story by Neil Gaiman called "Instructions". The art itself is based on the works of <a target="_blank" href="http://www.tcj.com/uno-moralez/">Uno Moralez</a>, and the text and UI design is based on the UI of the game <a target="_blank" href="http://undertale.com/">Undertale</a> by Toby Fox. This was my first major undertaking with designing an interactive website and my second attempt at web development after John C's 3D Game of Life.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-pink" data-dismiss="modal">Close</button>
@@ -240,7 +234,7 @@
       </div>
       <!-- GENERICON WEBSITE -->
       <div class="all portfolio web" data-cat="web" data-toggle="modal" data-target="#genericonModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/genericon.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -260,7 +254,7 @@
             </div>
             <div class="modal-body">
               <img src="img/genericonwebsite.png">
-              <a target="_blank" href="http://genericon.org/"><button type="button" class="btn btn-pink">View Live Website</button></a>
+              <a target="_blank" href="https://web.archive.org/web/20170616105506/http://genericon.org/"><button type="button" class="btn btn-pink">View Archived Website</button></a>
               <p>Summer of 2016, I assisted in making a formal website for Genericon. We had originally hosted a website on google sites, due to its ease of updating and not requiring in-depth knowledge especially for a staff that rotates out yearly. The website was moved to a wordpress server, where I helped to customize it aesthetically and populate the pages with information.</p>
             </div>
             <div class="modal-footer">
@@ -271,7 +265,7 @@
       </div>
       <!-- GENERICON ART ASSETS -->
       <a href="genericon.html"><div class="all portfolio art" data-cat="art">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/genericonart.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -284,7 +278,7 @@
       </div></a>
       <!-- GRAPHITE PORTFOLIO -->
       <a href="graphite.html"><div class="all portfolio art" data-cat="art">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/graphite.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -297,7 +291,7 @@
       </div></a>
       <!-- LARPING RESUME -->
       <div class="all portfolio web" data-cat="web" data-toggle="modal" data-target="#larpModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/larp.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -328,7 +322,7 @@
       </div>
       <!-- MIRTHE 2014 -->
       <div class="all portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2014Modal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/mirthe2014.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -361,7 +355,7 @@
       </div>
       <!-- MIRTHE 2015 -->
       <div class="all portfolio ui" data-cat="ui" data-toggle="modal" data-target="#mirthe2015Modal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/mirthe2015.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -420,7 +414,7 @@
       </div>
       <!-- MIXED MEDIA PORTFOLIO -->
       <a href="mixedmedia.html"><div class="all portfolio art" data-cat="art">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/mixed.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -433,7 +427,7 @@
       </div></a>
       <!-- PAINTING PORTFOLIO -->
       <a href="painting.html"><div class="all portfolio art" data-cat="art">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/painting.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -446,7 +440,7 @@
       </div></a>
       <!-- SCHUYLER FARMS -->
       <div class="all portfolio web" data-cat="web" data-toggle="modal" data-target="#schuylerModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/schuyler.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -478,7 +472,7 @@
       </div>
       <!-- SOOSH ARPG -->
       <div class="all portfolio web prog" data-cat="web" data-toggle="modal" data-target="#sooshModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/soosh.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -510,7 +504,7 @@
       </div>
       <!-- TIBERIUS -->
       <div class="all portfolio prog" data-cat="prog" data-toggle="modal" data-target="#tiberiusModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/tiberius.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -554,7 +548,7 @@
       </div>
       <!-- VIRTUAL TOUR -->
       <div class="all portfolio ui" data-cat="ui" data-toggle="modal" data-target="#virtualtourModal">
-        <div class="portfolio-wrapper">				
+        <div class="portfolio-wrapper">
           <img src="img/previews/virtualtour.png" alt="" />
           <div class="gallerylabel">
             <div class="gallerylabel-text">
@@ -582,7 +576,7 @@
           </div>
         </div>
       </div>
-    </div><!-- portfoliolist -->		
+    </div><!-- portfoliolist -->
   </div><!-- gallerycontainer -->
 
   <!-- JavaScripts -->
@@ -598,12 +592,12 @@
 				$('#portfoliolist').mixItUp({
   				selectors: {
     			  target: '.portfolio',
-    			  filter: '.filter'	
+    			  filter: '.filter'
     		  },
     		  load: {
       		  filter: '.all'
-      		}     
-				});								
+      		}
+				});
 			}
 		};
 		// Run the show!

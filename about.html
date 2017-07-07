@@ -11,7 +11,7 @@
   <title>Kathryn DiPippo | Portfolio</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap-social.css" rel="stylesheet" >
@@ -28,43 +28,37 @@
   <div id="wrapper" class="toggled">
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><div class="logo"><div class="name">Kathryn DiPippo</div>Portfolio</div></a>
+    <div class="topNav_container"><div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-5 col-xs-8">
+          <a href="index.html"><img src="img/logo.png" style="height:60px"></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li class="active"><a href="about.html">About</a></li>
-            <li><a target="_blank" href="resume.pdf">Resume</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <div class="col-md-7 col-sm-7 col-xs-4" style="padding-top:13px">
+          <div class="btn-group btn-group-justified topNav_buttons">
+            <a href="portfolio.html" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> <span class="topNav_text">Portfolio</span></a>
+            <a href="about.html" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="topNav_text">About</span></a>
+            <a target="_blank" href="resume.pdf" class="btn btn-pink topNav_button"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <span class="topNav_text">Resume</span></a>
+          </div>
+        </div>
       </div>
-    </nav>
-    
+    </div></div>
+
     <!-- Page Content -->
     <div class="container">
       <div class="row" style="background-color:#fff1ed;padding:10px;">
         <div class="col-md-5">
           <img class="aboutIcon" src="img/me.png">
           <div class="row">
-            <div class="col-md-6">
-              <center><span class="fa fa-map-marker"></span> New Jersey, USA</center>
-            </div><div class="col-md-6">
-              <center><span class="fa fa-envelope"></span> dipipk@rpi.edu</center>
+            <div class="col-md-12 col-xs-6">
+              <center><span class="fa fa-map-marker"></span> Newton, Massachusetts</center>
+            </div><div class="col-md-12 col-xs-6">
+              <center><span class="fa fa-envelope"></span> kathryn@unboundcommerce.com</center>
             </div>
           </div><br><div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-6">
               <a class="btn btn-block btn-social btn-github" target="blank" href="resume.pdf"><span class="fa fa-file-text"></span> My Resume</a>
               <a class="btn btn-block btn-social btn-linkedin" target="blank" href="https://www.linkedin.com/in/kathryn-dipippo-530815101"><span class="fa fa-linkedin"></span> My LinkedIn Profile</a>
-            </div><div class="col-md-6">
+            </div><div class="col-md-6 col-xs-6">
               <a class="btn btn-block btn-social btn-yahoo" target="blank" href="https://github.com/Pepper-Wood"><span class="fa fa-github"></span> My GitHub Profile</a>
               <a class="btn btn-block btn-social btn-deviantart" target="blank" href="http://pepper-wood.deviantart.com/"><span class="fa fa-deviantart" style="color:#05CC47;"></span> My DeviantArt Profile</a>
             </div>
@@ -98,7 +92,7 @@
     });
   });
 
-  // Update sliders on resize. 
+  // Update sliders on resize.
   // Because we all do this: i.imgur.com/YkbaV.gif
   $(window).resize(function(){
     $('.ba-slider').each(function(){
@@ -109,45 +103,45 @@
   });
 
   function drags(dragElement, resizeElement, container) {
-    
+
     // Initialize the dragging event on mousedown.
     dragElement.on('mousedown touchstart', function(e) {
-      
+
       dragElement.addClass('draggable');
       resizeElement.addClass('resizable');
-      
+
       // Check if it's a mouse or touch event and pass along the correct value
       var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-      
+
       // Get the initial position
       var dragWidth = dragElement.outerWidth(),
           posX = dragElement.offset().left + dragWidth - startX,
           containerOffset = container.offset().left,
           containerWidth = container.outerWidth();
-   
+
       // Set limits
       minLeft = containerOffset + 10;
       maxLeft = containerOffset + containerWidth - dragWidth - 10;
-      
+
       // Calculate the dragging distance on mousemove.
       dragElement.parents().on("mousemove touchmove", function(e) {
-        
+
         // Check if it's a mouse or touch event and pass along the correct value
         var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-        
+
         leftValue = moveX + posX - dragWidth;
-        
+
         // Prevent going off limits
         if ( leftValue < minLeft) {
           leftValue = minLeft;
         } else if (leftValue > maxLeft) {
           leftValue = maxLeft;
         }
-        
+
         // Translate the handle's left value to masked divs width.
         widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
-        
-        // Set the new values for the slider and the handle. 
+
+        // Set the new values for the slider and the handle.
         // Bind mouseup events to stop dragging.
         $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
           $(this).removeClass('draggable');
