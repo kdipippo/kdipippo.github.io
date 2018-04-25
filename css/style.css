@@ -225,6 +225,12 @@ h1,h2,h3,h4 {
     text-align: center;
     transition: all 500ms ease;
 }
+@media (max-width:600px) {
+    .tabName {
+        display: none;
+    }
+}
+
 #material-tabs>li:hover {
     color: #FFF;
     cursor: pointer;
