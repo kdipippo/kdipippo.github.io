@@ -12,33 +12,40 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/mdb.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Lobster+Two" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="js/modernizr.custom.js"></script>
+	<style>
+	.socialmedia_linkedin, .socialmedia_github, .socialmedia_deviantart, .socialmedia_blogspot {
+		font-size: 20px;
+	}
+	.socialmedia_linkedin>.fa-circle { color: #63d0d4; }
+	.socialmedia_github>.fa-circle { color: #6364d4; }
+	.socialmedia_deviantart>.fa-circle { color: #63d464; }
+	.socialmedia_blogspot>.fa-circle { color: #eb6b43; }
+	</style>
 </head>
 <body>
-	<img id="succulent" class="succulent" src="img/succulentSpinner.png">
-
 	<div class="topSection">
 		<h1 class="title center" style="z-index:10">Kathryn DiPippo</h1>
 		<div class="centerFlex">
 			<a target="_blank" href="https://www.linkedin.com/in/kathryn-dipippo-530815101">
-				<span class="fa-stack">
-				  <i class="fa fa-circle fa-stack-1x circle-li"></i>
-				  <i class="fa fa-linkedin fa-stack-1x"></i>
+				<span class="fa-stack fa-2x socialmedia_linkedin">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
 				</span>
 			</a>
 			<a target="_blank" href="https://github.com/Pepper-Wood">
-				<span class="fa-stack">
-				  <i class="fa fa-circle fa-stack-1x circle-git"></i>
-				  <i class="fa fa-github fa-stack-1x"></i>
+				<span class="fa-stack fa-2x socialmedia_github">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fab fa-github fa-stack-1x fa-inverse"></i>
 				</span>
 			</a>
-			<a target="_blank" href="https://pepper-wood.deviantart.com/">
-				<span class="fa-stack">
-				  <i class="fa fa-circle fa-stack-1x circle-da"></i>
-				  <i class="fa fa-deviantart fa-stack-1x"></i>
+			<a target="_blank" href="https://kathryndipippo.blogspot.com">
+				<span class="fa-stack fa-2x socialmedia_blogspot">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fab fa-blogger-b fa-stack-1x fa-inverse"></i>
 				</span>
 			</a>
 		</div>
@@ -50,8 +57,7 @@
 				<li id="tab1-tab" class="activeTab"><i class="fa fa-desktop"></i><span class="tabName">&nbsp;&nbsp;&nbsp;Development</span></li>
 				<li id="tab2-tab"><i class="fa fa-paint-brush"></i><span class="tabName">&nbsp;&nbsp;&nbsp;Artwork</span></li>
 				<li id="tab3-tab"><i class="fa fa-user"></i><span class="tabName">&nbsp;&nbsp;&nbsp;About</span></li>
-				<li id="tab4-tab"><i class="fa fa-pencil"></i><span class="tabName">&nbsp;&nbsp;&nbsp;Blog</span></li>
-				<li id="tab5-tab"><i class="fa fa-file"></i><span class="tabName">&nbsp;&nbsp;&nbsp;Resume</span></li>
+				<li id="tab4-tab"><i class="fa fa-file"></i><span class="tabName">&nbsp;&nbsp;&nbsp;Resume</span></li>
 				<span class="tabUnderline"></span>
 			</div>
 		</header>
@@ -63,12 +69,28 @@
 					<li>
 						<div class="card">
 							<div class="card-image">
-								<img src="img/oofoos.png">
+								<img src="img/jabberwock_thumbnail.png">
+								<span class="card-title">Jabberwock-Isle Trading Post</span>
+							</div>
+							<p class="helperText">PHP / HTML / JS / CSS / SQL</p>
+							<div class="card-content">
+								<p>Inventory management system for <a class="inlineLink" href="https://www.deviantart.com/jabberwock-isle">Jabberwock-Isle</a> on DeviantArt, based on the murder mystery video game Super DanganRonpa 2: Goodbye Despair.</p>
+								<div class="horizontalFlex shrinkButtons">
+									<a href="https://jabberwock-isle.com/"><button class="btn waves-effect waves-light">Live Project</button></a>
+									<a href="https://kathryndipippo.blogspot.com/2018/09/project-jabberwock-isle-trading-post.html"><button class="btn waves-effect waves-light">Blog Write-Up</button></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<div class="card-image">
+								<img src="img/oofoos_thumbnail.png">
 								<span class="card-title">Oofoos</span>
 							</div>
 							<p class="helperText">PHP / HTML / JS / CSS / SQL</p>
 							<div class="card-content">
-								<p>An online pet website (similar to Neopets) with a focus on create art and roleplaying. It is one of my newer projects and is still in the process of getting set up.</p>
+								<p>An online pet website (similar to Neopets) with a focus on create art and roleplaying.</p>
 								<a href="https://adoptapedia.com/oofoos/"><button class="btn waves-effect waves-light">Live Project</button></a>
 							</div>
 						</div>
@@ -76,7 +98,7 @@
 					<li>
 						<div class="card">
 							<div class="card-image">
-								<img src="img/raspberrymbta.jpg">
+								<img src="img/raspberrymbta_thumbnail.png">
 								<span class="card-title">Raspberry MBTA</span>
 							</div>
 							<p class="helperText">PHP / HTML / JS / CSS / SQL</p>
@@ -89,7 +111,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/adoptapedia.png">
+			                    <img src="img/adoptapedia_thumbnail.png">
 			                    <span class="card-title">Adoptapedia</span>
 			                </div>
 							<p class="helperText">PHP / HTML / JS / CSS / SQL</p>
@@ -106,7 +128,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/sushidogs.png">
+			                    <img src="img/sushidogs_thumbnail.png">
 			                    <span class="card-title">Sushi Dogs</span>
 			                </div>
 		                    <p class="helperText">HTML / JS / CSS</p>
@@ -119,7 +141,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/jPepperBlank.png">
+			                    <img src="img/jPepperBlank_thumbnail.png">
 			                    <span class="card-title">Web Development Sandbox</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
@@ -132,7 +154,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/schuyler.png">
+			                    <img src="img/schuyler_thumbnail.png">
 			                </div>
 							<p class="helperText">HTML / CSS</p>
 			                <div class="card-content">
@@ -148,7 +170,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/artwork/conbook30.png">
+			                    <img src="img/conbook30_thumbnail.png">
 			                    <span class="card-title">Genericon</span>
 			                </div>
 							<p class="helperText">PaintToolSAI / Photoshop / Wordpress</p>
@@ -168,7 +190,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="http://www.kathryndipippo.com/LARPingResume/img/img3.jpg">
+			                    <img src="img/larpingResume_thumbnail.png">
 			                    <span class="card-title">LARPing Resume</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
@@ -187,12 +209,12 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/rsfa.jpg">
+			                    <img src="img/rsfa_thumbnail.png">
 								<span class="card-title">RSFA Library</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
 			                <div class="card-content">
-								<p>March 2017, I made a single-page site to help make the library catalog of the <a class="inlineLink" target="_blank" href="https://sites.google.com/site/rpisfa/library">Rensselaer Science-Fiction & Anime Association</a> easier to search. Banner art by <a class="inlineLink" target="_blank" href="https://www.pixiv.net/member.php?id=654533">Ayu</a> on Pixiv.</p>
+								<p>March 2017, I made a single-page site to help make the library catalog of the <a class="inlineLink" target="_blank" href="https://sites.google.com/site/rpisfa/library">Rensselaer Science-Fiction & Anime Association</a> easier to search.</p>
 								<a href="http://www.kathryndipippo.com/RSFALibrary/"><button class="btn waves-effect waves-light">Website</button></a>
 			                </div>
 			            </div>
@@ -200,7 +222,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="http://www.kathryndipippo.com/NightMares/img/mares2/eyeris/1.png">
+			                    <img src="img/nightmares_thumbnail.png">
 			                    <span class="card-title">Night Mares</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
@@ -213,7 +235,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/conway.png">
+			                    <img src="img/conway_thumbnail.png">
 			                    <span class="card-title">John C's Game of Life</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
@@ -221,9 +243,6 @@
 			                    <p>Fall 2015, an application to display a rotating 3D version of John Conway's game of life using various JavaScript graphics engines.</p>
 								<div class="readMoreHidden">
 									<p>There is also an option to switch the random colors of the cubes to images of professional wrestler John Cena, hence the title crediting "John C".</p>
-									<p><img src="img/conway3.png">Jan 12th 2017, Version 3: wanted to challenge myself with using different colors to re-color Version 2's layout.</p>
-									<p><img src="img/conway2.png">Jan 12th 2017, Version 2: starting out learning how to use Bootstrap and styling based on Bootstrap's defaults.</p>
-									<p><img src="img/conway1.png">Dec 7th 2015: Initial version presented to the class, with little programming experience. Much of the styling was default HTML styling as well as repeated inline stylings.</p>
 								</div>
 								<p class="readMore">Read more...</p>
 			                    <a href="http://www.kathryndipippo.com/3DGameOfLife/"><button class="btn waves-effect waves-light">Live Project</button></a>
@@ -233,7 +252,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/garden.png">
+			                    <img src="img/garden_thumbnail.png">
 			                    <span class="card-title">Through the Garden Gate</span>
 			                </div>
 							<p class="helperText">HTML / JS / CSS</p>
@@ -251,7 +270,7 @@
 					<li>
 			            <div class="card">
 			                <div class="card-image">
-			                    <img src="img/tiberius.png">
+			                    <img src="img/tiberius_thumbnail.png">
 			                    <span class="card-title">Tiberius the Line Following Robot</span>
 			                </div>
 							<p class="helperText">C / Arduino</p>
@@ -259,7 +278,7 @@
 			                    <p>Spring 2015, I assisted with programming a line following robot dubbed "Tiberius" using a Pololu sensor and an Arduino microcontroller. He placed first in a competition against other line followers, completing the expert course in 19 seconds.</p>
 								<div class="readMoreHidden">
 									<p>He wears a tiny crown because he's a king.</p>
-									<p><img src="img/tiberius2.png">Additional top-down view of Tiberius.</p>
+									<p><img src="img/tiberius2_thumbnail.png">Additional top-down view of Tiberius.</p>
 									<p>
 										<video width="100%" controls="">
 											<source src="video/tiberius.mp4" type="video/mp4">
@@ -371,7 +390,7 @@
 			<div id="tab3">
 				<div class="container">
 					<div class="card horizontalFlex cardTopPadding" style="flex-direction:column;align-items:center;">
-						<img src="img/succulents.jpg" style="width:100%;height:10em;object-fit:cover">
+						<img src="img/succulents_thumbnail.png" style="width:100%;height:10em;object-fit:cover">
 						<img src="http://www.kathryndipippo.com/img/me.png" style="border-radius:100%;border:10px solid #FFF;position: absolute; top:20px">
 						<div class="card-content" style="padding:10px;padding-top:6em">
 							<p>I am a <b>software developer</b> specializing in full-stack development with a passion for front-end application design and implementation. Enthusiastic, dependable team player dedicated to streamlining processes. I have strong project management and client communication skills. I am eager to pursue a successful career under multiple branches of computer science, including front-end positions (such as web development, front-end application programming, and UX/UI development) and back-end positions (such as database development and back-end/full-stack application programming).</p>
@@ -383,14 +402,9 @@
 				</div>
 			</div>
 			<div id="tab4">
-				<div class="cardTopPadding">
-					<a target="_blank" href="http://printf9.blogspot.com/"><button class="btn">Printf9</button></a>
-				</div>
-			</div>
-			<div id="tab5">
 				<div class="container">
 					<div class="card cardTopPadding" style="height:40em">
-						<div class="helperText horizontalFlex"><div>Last updated: April 21st, 2018</div><div><a target="_blank" href="pdf/resume.pdf">View PDF in new tab.</a></div></div>
+						<div class="helperText horizontalFlex"><div></div><div><a target="_blank" href="pdf/resume.pdf">View PDF in new tab.</a></div></div>
 						<object data="pdf/resume.pdf" type="application/pdf" width="100%" height="100%">
 							<p>This browser does not support embedded PDFs.></p>
 						</object>
@@ -491,14 +505,12 @@
 	}
 
 	$(".artGridFilterButtons button").click(function() {
-		$("#succulent").fadeIn();
 		$("#noArtwork").slideUp();
 		$(".artGridFilterButtons button").removeClass("activeArtGridFilterButton");
 		$(this).addClass("activeArtGridFilterButton");
 		applyArtFilter($(this).attr("id").replace("artFilter-",""));
 	});
 	$("#genericonArtTrigger").click(function() {
-		$("#succulent").fadeIn();
 		$("#noArtwork").slideUp();
 		window.scrollTo(0,0);
 		$("#material-tabs>li").removeClass("activeTab");
@@ -532,7 +544,6 @@
 		} else {
 			$("#noArtwork").slideDown();
 		}
-		$("#succulent").fadeOut();
 	}
 	</script>
 </body>
