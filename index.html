@@ -497,7 +497,7 @@
 			});
 		});
 		artworks().order("date desc").each(function (artwork) {
-			artworkHtml += "<li><div class='card'><div class='card-image'><img src='img/artwork/" + artwork.url + "'></div>";
+			artworkHtml += "<li><div class='card'><div class='card-image'><img src='img/artwork/" + (artwork.url).replace(".jpg", ".png") + "'></div>";
 			artworkHtml += "<div class='helperText horizontalFlex'><div>" + artwork.media + "</div><div>" + artwork.date + "</div></div>";
 			artworkHtml += "<div class='card-content'>" + artwork.description + "</div></div>";
 		});
@@ -529,7 +529,7 @@
 		artworks().order("date desc").each(function (artwork) {
 			if ((filterStr == "all") || (artwork.categories.toLowerCase().includes(filterStr))) {
 				itemCount += 1;
-				artworkHtml += "<li><div class='card'><div class='card-image'><img src='img/artwork/" + artwork.url + "'></div>";
+				artworkHtml += "<li><div class='card'><div class='card-image'><img src='img/artwork/" + (artwork.url).replace(".jpg", ".png") + "'></div>";
 				artworkHtml += "<div class='helperText horizontalFlex'><div>" + artwork.media + "</div><div>" + artwork.date + "</div></div>";
 				artworkHtml += "<div class='card-content'>" + artwork.description + "</div></div>";
 			}
